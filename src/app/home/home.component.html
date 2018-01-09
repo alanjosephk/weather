@@ -1,0 +1,32 @@
+<p>
+	Home Works!
+	<br>
+
+
+</p>
+	<div class="well">
+			<button (click)="test()">Get service</button>
+	<button (click)="fbposts()">Get FB</button>
+	<button (click)="online_test()">Get service from online</button>
+	</div>
+<ul>
+	<li *ngFor="let item of todos">{{item.id}} : {{item.label}}</li>
+</ul>
+
+<!-- <ul>
+	<li *ngFor="let item of fbdata">
+		<ul>
+			<li *ngFor="let img of item.images; let i =index;" class="img-li">
+				<img *ngIf="i==0" src="{{img.source}}">
+			</li>
+		</ul>
+	</li>
+</ul> -->
+
+<div class="row jumbotron" *ngIf="fbdata">
+	<div class="col-xs-3" *ngFor="let item of fbdata">
+		<div *ngFor="let img of item.images; let i =index;" class="img-li text-center">
+			<img *ngIf="i==0" src="{{img.source}}">
+		</div>
+	</div>
+</div>
