@@ -36,17 +36,8 @@ export class AppComponent {
 				// setTimeout(()=>{this.Weather(this.lat,this.lon)}, 1000);
 				this.Weather(this.lat,this.lon);
 				this.allow=true;
-
 			});
-		// if(!this.allow) {
-		// 	this.getLocation(9.560692,76.877);
-		// 	this.Weather(9.560692,76.877);
-		// }
 		}
-		// setTimeout(()=>{
-		// 	console.log("Hi",this.lat,this.lon);
-		// 	this.Weather(this.lat,this.lon);
-		// }, 2000);
 
 	}
 
@@ -80,7 +71,3 @@ export class AppComponent {
 		} );
 	}
 }
-
-// key=05fd8f08c51f2e612aaa833d41ac06a3
-
-      // this.wea = data.main

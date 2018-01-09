@@ -22,4 +22,5 @@
 
 
 
+// key=05fd8f08c51f2e612aaa833d41ac06a3
 // api.openweathermap.org/data/2.5/forecast/daily?lat=35&lon=139&cnt=10
